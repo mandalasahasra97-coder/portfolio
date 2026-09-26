@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahasra Mandala | Portfolio</title>
+    <style>
+        :root {
+            --bg-dark: #0f1016;
+            --panel-bg: #181922;
+            --border-color: #2a2c3a;
+            --text-main: #ffffff;
+            --text-muted: #a3a6bc;
+            --pastel-pink: #ffd3e2;   /* Baby Pink */
+            --pastel-purple: #e2d4f0; /* Soft Lavender */
+            --pastel-blue: #d4f0f0;   /* Muted Cyan */
+            --bright-accent: #ff8cb3;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #13141c, #26161e);
+            padding: 5rem 2rem;
+            text-align: center;
+            border-bottom: 2px solid var(--pastel-pink);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: var(--pastel-pink);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            color: var(--pastel-pink);
+            font-size: 2rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .intro-card {
+            background-color: var(--panel-bg);
+            border-left: 4px solid var(--bright-accent);
+            padding: 2rem;
+            border-radius: 6px;
+            font-size: 1.15rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+        }
+
+        .card {
+            background-color: var(--panel-bg);
+            padding: 1.8rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--bright-accent);
+            box-shadow: 0 4px 20px rgba(255, 140, 179, 0.15);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--bright-accent);
+            font-size: 1.3rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #211921;
+            color: var(--pastel-pink);
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            margin: 0.3rem;
+            font-size: 0.85rem;
+            border: 1px solid var(--bright-accent);
+            font-weight: 500;
+        }
+
+        .pastel-text-1 { color: var(--pastel-pink); }
+        .pastel-text-2 { color: var(--pastel-purple); }
+        .pastel-text-3 { color: var(--pastel-blue); }
+
+        ul {
+            padding-left: 1.2rem;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 0.6rem;
+            color: #e1e3ed;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            background-color: #0c0d12;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sahasra Mandala</h1>
+        <p class="pastel-text-2">MPC Scholar • Published Staff Writer • Data & Systems Analyst</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- ABOUT BOX -->
+        <section id="about">
+            <div class="intro-card">
+                Hi, I'm Sahasra. I am an 11th-grade MPC scholar from Hyderabad, India, running a profile that intersects rigorous quantitative logic with creative systemic execution. Proficient in SQL database configuration and advanced Excel metric analytics, I design, scale, and publish regional and international workflows that challenge standard academic domains.
+            </div>
+        </section>
+
+        <!-- ACADEMICS & TECHNICAL MATRICES -->
+        <section id="matrices" class="grid-2">
+            <div class="card">
+                <h3 class="pastel-text-1">Academic Profile</h3>
+                <ul>
+                    <li><strong>Agastya Junior College:</strong> Expected Graduation 2028 (MPC Stream)</li>
+                    <li><strong>Sri Vamshidhar High School:</strong> 10th CBSE Record (91.4%)</li>
+                    <li><strong>Scholastic Framework:</strong> Maintained consecutive straight-A1 grades (91-100%) across Mathematics, ICT, and Sciences</li>
+                    <li><strong>Testing Metric:</strong> Targeted Profile 1500+ Digital SAT</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="pastel-text-2">Technical Engine</h3>
+                <div style="margin-top: 1rem;">
+                    <span class="badge">SQL Data Manipulation</span>
+                    <span class="badge">Advanced Microsoft Excel</span>
+                    <span class="badge">Database Architecture</span>
+                    <span class="badge">PowerPoint Visual Decking</span>
+                    <span class="badge">NIIT Gold Standard IT-Wizard Plus</span>
+                    <span class="badge">System Optimization</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEADERSHIP CORE -->
+        <section id="leadership">
+            <h2>Validated Leadership Hooks</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="pastel-text-3">Founder & Leader — Language Initiative</h3>
+                    <p>Established and scaled an intentional 25-member institutional Language Club. Directed multi-tier school assembly awareness programs and executed large-scale panels for 200+ target students, successfully evaluated by the School Chairman, Principal, and Dean.</p>
+                </div>
+                <div class="card">
+                    <h3 class="pastel-text-1">Elected Student Representative</h3>
+                    <p>Served as an active School Council Member. Managed secure peer-to-administrator lines, engineered regional student community outreach, and structured institutional welfare execution.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VERIFIED HONORS TIMELINE -->
+        <section id="honors">
+            <h2>Verified Honors & Awards</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3 class="pastel-text-1">STEM Excellence</h3>
+                    <p><strong>Ramanujan Mathematics Contest:</strong> Awarded Certificate of Achievement for performance excellence on National Mathematics Day.</p>
+                    <p><strong>Science Quiz League:</strong> Secured 1st Position across the Grade VIII division.</p>
+                </div>
+                <div class="card">
+                    <h3 class="pastel-text-2">Athletic Leadership</h3>
+                    <p><strong>Kho-Kho Inter-House Championship:</strong> Led tactical house team structures to consecutive 3rd-place placements (2022 & 2025).</p>
+                    <p><strong>Track & Field Track:</strong> Secured 1st Place in Medicine Ball Throw; 2nd Place in Shuttle Run.</p>
+                </div>
+                <div class="card">
+                    <h3 class="pastel-text-3">Global Distinctions</h3>
+                    <p><strong>Discovery School Super League:</strong> Attained School Winner / Level 1 Warrior distinction under BYJU’S national testing.</p>
+                    <p><strong>Institutional Merit:</strong> Named "Star of the Month" for outstanding personal attributes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GLOBAL INFRASTRUCTURE PIPELINES -->
+        <section id="pipelines">
+            <h2>Active International Infrastructure</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3 class="pastel-text-2">Girls in STEM Magazine</h3>
+                    <p><strong>Staff Writer:</strong> Publishing analytical essays mapping the overlap of computer logic syntax (SQL) with human spoken languages to dismantle barriers for girls in global tech.</p>
+                </div>
+                <div class="card">
+                    <h3 class="pastel-text-3">Royal Astronomical Society</h3>
+                    <p><strong>Independent Data Tracker:</strong> Investigating stellar evolution trends by processing simulations inside remote virtual environments (Stars for Schools framework).</p>
+                </div>
+                <div class="card">
+                    <h3 class="pastel-text-1">United Nations FAO</h3>
+                    <p><strong>Design Entrant:</strong> Building digital vector models combining database code scripts seamlessly looping into organic root structures for the 2026 Poster Contest.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Sahasra Mandala • Secure Channel: mandalasahasra97@gmail.com</p>
+    </footer>
+
+</body>
+</html>
